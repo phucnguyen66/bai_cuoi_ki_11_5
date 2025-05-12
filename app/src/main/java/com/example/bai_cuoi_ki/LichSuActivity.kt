@@ -17,7 +17,16 @@ class LichSuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lich_su)
+<<<<<<< HEAD
 
+=======
+        val quay: Button = findViewById(R.id.quay_lai)
+        quay.setOnClickListener {
+            // Khởi động Activity mới
+            finish()
+
+        }
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
         recyclerView = findViewById(R.id.recyclerViewLichSu)
         adapter = LichSuAdapter(danhSachLichSu)
         recyclerView.layoutManager = LinearLayoutManager(this)

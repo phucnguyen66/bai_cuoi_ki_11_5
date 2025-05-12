@@ -126,12 +126,15 @@
             android:name=".ThongKeActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
+<<<<<<< HEAD
             android:name=".QuestionActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
             android:name=".SelectMadeActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
         <activity
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
             android:name=".SendMessageActivity"
             android:configChanges="keyboardHidden|orientation|screenSize" />
     </application>

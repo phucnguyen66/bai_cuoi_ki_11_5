@@ -29,7 +29,14 @@ class LichSuFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< HEAD
 
+=======
+        val quay: Button = view.findViewById(R.id.quay_lai)
+        quay.setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 
         recyclerView = view.findViewById(R.id.recyclerViewLichSu)
         adapter = LichSuAdapter(danhSachLichSu)

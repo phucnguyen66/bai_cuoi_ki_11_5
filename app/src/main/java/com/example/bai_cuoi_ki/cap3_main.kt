@@ -5,7 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+<<<<<<< HEAD
 import android.widget.Toast
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 import androidx.appcompat.app.AppCompatActivity
 
 class cap3_main : AppCompatActivity() {
@@ -46,6 +49,7 @@ class cap3_main : AppCompatActivity() {
             val intent1 = Intent(this, com.example.bai_cuoi_ki.cap3_baihinh::class.java)
             startActivity(intent1)
         }
+<<<<<<< HEAD
         val vua4: Button = findViewById(R.id.lambai_tn)
 
         vua4.setOnClickListener {
@@ -57,6 +61,8 @@ class cap3_main : AppCompatActivity() {
                 Toast.makeText(this, "Bạn chưa đủ điều kiện để làm bài!", Toast.LENGTH_SHORT).show()
             }
         }
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 
     }
 

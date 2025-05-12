@@ -13,6 +13,21 @@
 
     <!-- Hiển thị kết quả đúng và sai -->
 
+<<<<<<< HEAD
+=======
+    <Switch
+        android:id="@+id/switchTheme"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:text="Chế độ tối/sáng"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 
 
 

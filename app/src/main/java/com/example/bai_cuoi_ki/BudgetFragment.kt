@@ -29,7 +29,26 @@ class BudgetFragment : Fragment(R.layout.setting) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+<<<<<<< HEAD
 
+=======
+        switchTheme = view.findViewById(R.id.switchTheme)
+//nút lưu sáng tối-----------------------------------------------------------------------
+        // Khởi tạo SharedPreferences để lưu trạng thái chế độ tối/sáng
+        sharedPreferences = requireActivity().getSharedPreferences("Settings", AppCompatActivity.MODE_PRIVATE)
+
+        // Đọc trạng thái chế độ tối/sáng khi fragment được tạo
+        val isDarkMode = sharedPreferences.getBoolean("dark_mode", false)
+        setTheme(isDarkMode)
+        switchTheme.isChecked = isDarkMode
+
+        // Lắng nghe thay đổi của Switch
+        switchTheme.setOnCheckedChangeListener { _, isChecked ->
+            // Lưu trạng thái chế độ tối/sáng vào SharedPreferences
+            sharedPreferences.edit().putBoolean("dark_mode", isChecked).apply()
+            setTheme(isChecked)
+        }
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 //nút xem lịch sử làm bài-------------------------------------------------------------
 
 // nút xem ết quả tốt nhất----------------------------------------------------------------
@@ -69,6 +88,7 @@ class BudgetFragment : Fragment(R.layout.setting) {
 
 //hàm--------------------------------------------------------------------------------------
     // Thay đổi chế độ sáng/tối
+<<<<<<< HEAD
 private fun setTheme(isDarkMode: Boolean) {
     if (isDarkMode) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
@@ -76,6 +96,15 @@ private fun setTheme(isDarkMode: Boolean) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
 }
+=======
+    private fun setTheme(isDarkMode: Boolean) {
+        if (isDarkMode) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+    }
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
     private fun chonCapDoVaChuDe() {
         val capDoList = arrayOf("Cấp 1", "Cấp 2", "Cấp 3")
 

@@ -13,5 +13,17 @@
         android:background="@drawable/bglogin"
         android:layout_weight="1" />
 
+<<<<<<< HEAD
 
+=======
+    <Button
+        android:id="@+id/quay_lai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0000FF"
+        android:text="Quay lại"
+        android:textStyle="bold"/>
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 </LinearLayout>

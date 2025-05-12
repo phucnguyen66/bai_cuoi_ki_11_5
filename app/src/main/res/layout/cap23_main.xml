@@ -8,6 +8,7 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="45dp">
 
+<<<<<<< HEAD
 
     <Button
         android:id="@+id/lambai_tn"
@@ -25,6 +26,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988" />
 
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
     <Button
         android:id="@+id/quay_lai"
         android:layout_width="130dp"
@@ -103,16 +106,28 @@
         android:id="@+id/lambai3"
         android:layout_width="386dp"
         android:layout_height="116dp"
+<<<<<<< HEAD
         android:layout_marginTop="492dp"
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
         android:backgroundTint="@color/white"
         android:text="            Làm bài tập dạng hình"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
+<<<<<<< HEAD
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+=======
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844" />
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 
     <Button
         android:id="@+id/khung1"

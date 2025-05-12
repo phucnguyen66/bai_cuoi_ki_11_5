@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.firebase.database.DatabaseReference
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.FirebaseFirestore
 fun pushDataToFirebase_baigiai_normal() {
@@ -775,6 +778,7 @@ fun pushDataToFirebase_calculation2() {
         .addOnSuccessListener { Log.d("Firebase", "Đẩy dữ liệu thành công!") }
         .addOnFailureListener { Log.e("Firebase", "Lỗi khi đẩy dữ liệu", it) }
 }
+<<<<<<< HEAD
 fun push50AdvancedQuestionsToFirebase() {
     val database = FirebaseDatabase.getInstance()
     val myRef = database.getReference("Question").child("made1")
@@ -1140,15 +1144,21 @@ fun push50AdvancedQuestionsToFirebase() {
 }
 
 
+=======
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
 
 class MainActivity : AppCompatActivity() {
     private lateinit var db: FirebaseFirestore
 
+<<<<<<< HEAD
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
+=======
+    override fun onCreate(savedInstanceState: Bundle?) {
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val button: Button = findViewById(R.id.start0)
@@ -1160,7 +1170,11 @@ class MainActivity : AppCompatActivity() {
             .add(calculation)
         val sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)
         val loggedInUser = sharedPreferences.getString("loggedInUser", null)
+<<<<<<< HEAD
         push50AdvancedQuestionsToFirebase()
+=======
+        pushDataToFirebase_calculation2()
+>>>>>>> a4755c26eed3cb3e8d60a4fa1f0a113688066e57
         button.setOnClickListener {
             if (loggedInUser != null) {
                 // Có tài khoản đã lưu
